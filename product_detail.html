@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <div class="nav-bar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="image/logo/logo3.jpg" alt="">
+            </div>
+            <div class="search">
+                <form action="">
+                    <div class="search-box">
+                        <input type="text" class="search-input">
+                        <button type="submit" class="btn-search">
+                            <img src="image/all/search_26px.png" alt="" class="search-img">
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="img-favicon">
+                <a href="">
+                    <img src="image/all/appointment_reminders_26px.png" alt="">
+                </a>
+            </div>
+            <div class="img-favicon">
+                <a href="">
+                    <img src="image/all/purchase_order_26px.png" alt="">
+                </a>
+            </div>
+            <div class="img-favicon">
+                <a href="">
+                    <img src="image/all/shopping_cart_26px.png" alt="">
+                </a>
+            </div>
+            <div class="user">
+                <a href="" class="btn-login">
+                    Login
+                </a>
+                <a href="" class="btn-register">
+                    Register
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- content -->
+    <div class="content-container">
+        <div class="box">
+            <div class="box-container">
+                <div class="grid-2">
+                    <div class="box-row">
+                        <div class="product-image-detail">
+                            <button class="slide-left" onclick="slide_left()"><i
+                                    class="fa fa-chevron-left"></i></button>
+                            <button class="slide-right" onclick="slide_right()"><i
+                                    class="fa fa-chevron-right"></i></button>
+                            <img src="image/example/produk/example_produk1.jpg" alt="" class="product-image">
+                            <img src="image/example/produk/example_produk2.jpg" alt="" class="product-image">
+                            <img src="image/example/produk/example_produk3.jpg" alt="" class="product-image">
+                            <img src="image/example/produk/example_produk4.jpg" alt="" class="product-image">
+                            <img src="image/example/produk/example_produk1.jpg" alt="" class="product-image">
+                        </div>
+                        <div class="product-bottom-img">
+                            <div class="product-hidden">
+                                <label>
+                                    <button class="left-btn-product">
+                                        <i class="fa fa-chevron-left"></i>
+                                    </button>
+                                    <button class="right-btn-product">
+                                        <i class="fa fa-chevron-right"></i>
+                                    </button>
+                                </label>
+                                <div class="product-image-all">
+                                    <div class="product-image-bottom">
+                                        <img src="image/example/produk/example_produk1.jpg" alt="" class="selected"
+                                            onclick="slide_bottom_image(0)">
+                                    </div>
+                                    <div class="product-image-bottom">
+                                        <img src="image/example/produk/example_produk2.jpg" alt=""
+                                            onclick="slide_bottom_image(1)">
+                                    </div>
+                                    <div class="product-image-bottom">
+                                        <img src="image/example/produk/example_produk3.jpg" alt=""
+                                            onclick="slide_bottom_image(2)">
+                                    </div>
+                                    <div class="product-image-bottom">
+                                        <img src="image/example/produk/example_produk4.jpg" alt=""
+                                            onclick="slide_bottom_image(3)">
+                                    </div>
+                                    <div class="product-image-bottom">
+                                        <img src="image/example/produk/example_produk1.jpg" alt=""
+                                            onclick="slide_bottom_image(4)">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-column">
+                        <div class="text-header-product">
+                            What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry
+                        </div>
+                        <div class="rating-product">
+                            <span class="fa fa-star checked" id="star_1"></span>
+                            <span class="fa fa-star" id="star_2"></span>
+                            <span class="fa fa-star" id="star_3"></span>
+                            <span class="fa fa-star" id="star_4"></span>
+                            <span class="fa fa-star" id="star_5"></span>
+                            <div>5.0</div>
+                        </div>
+                        <div class="product-detail grid-2-detail">
+                            <div class="detail-title">Harga</div>
+                            <div class="detail-price">
+                                <div class="detail-price-real">2.000.000</div>
+                                <div class="detail-price-discount">
+                                    1.500.000
+                                </div>
+                            </div>
+                            <div class="detail-title">Pengiriman</div>
+                            <div class="shipper">
+                                <div class="detail-shipper">
+                                    <div class="shipper-title">Dari </div>
+                                    <p class="shipper-text">Fajar Jalaksana</p>
+                                </div>
+                                <div class="detail-shipper">
+                                    <div class="shipper-title">Ke </div>
+                                    <select name="" id="" class="shipper-text"></select>
+                                </div>
+                                <div class="detail-shipper">
+                                    <div class="shipper-title">Ongkos Kirim</div>
+                                    <select name="" id="" class="shipper-text"></select>
+                                </div>
+                            </div>
+                            <div class="detail-title">Choice</div>
+                            <div class="detail-choice">
+                                <div class="choice">example</div>
+                                <div class="choice">example</div>
+                                <div class="choice">example</div>
+                                <div class="choice">example</div>
+                                <div class="choice">example</div>
+                                <div class="choice">eds</div>
+
+                            </div>
+                            <div class="detail-title">Jumlah</div>
+                            <div class="detail-value">
+                                <button id="minus" onclick="minus()">-</button>
+                                <input id="count" type="text" value="1">
+                                <button id="plus" onclick="plus()">+</button>
+                                <input type="hidden" id="stok" value="2">
+                                <p>Stok <span>2</span></p>
+                            </div>
+                            <div class="column-2">
+                                <div class="detail-button">
+                                    <button class="btn-detail buy" type="submit">Beli</button>
+                                    <button class="btn-detail all"> <img src="image/all/add_shopping_cart_26px.png"
+                                            alt=""> <span>Tambah Ke Keranjang</span></button>
+                                    <button class="btn-detail all"> <img src="image/all/speech_bubble_26px.png" alt="">
+                                        <span class="chat">Chat</span> </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="box-container">
+                <div class="box-header">
+                    <div class="text-header">
+                        Deskripsi Produk
+                    </div>
+                </div>
+                <!-- <hr> -->
+                <p class="description-content">What is Lorem Ipsum?
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+                    Why do we use it?
+                    It is a long established fact that a reader will be distracted by the readable content of a page
+                    when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution of letters, as opposed to using 'Content here, content here', making it look like
+                    readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their
+                    default model text, and a search for 'lorem ipsum' will uncover many web sites still in their
+                    infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose
+                    (injected humour and the like).</p>
+
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-container">
+                <div class="box-header">
+                    <div class="text-header">
+                        Ulasan
+                    </div>
+                </div>
+                <!-- <hr> -->
+                <div class="review-product">
+                    <img src="image/all/user_female_26px.png" alt="" class="avatar-product">
+                    <div class="avatar-name">
+                        User 1
+                    </div>
+                    <div class="rating-product-review">
+                        <span class="fa fa-star checked" id="star_1"></span>
+                        <span class="fa fa-star" id="star_2"></span>
+                        <span class="fa fa-star" id="star_3"></span>
+                        <span class="fa fa-star" id="star_4"></span>
+                        <span class="fa fa-star" id="star_5"></span>
+                    </div>
+                </div>
+                <div class="review-product-comment">
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                        classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a
+                        Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin
+                        words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in
+                        classical literature, discovered the undoubtable source.</p>
+                </div>
+                <div class="review-product">
+                    <img src="image/all/user_female_26px.png" alt="" class="avatar-product">
+                    <div class="avatar-name">
+                        User 1
+                    </div>
+                    <div class="rating-product-review">
+                        <span class="fa fa-star checked" id="star_1"></span>
+                        <span class="fa fa-star" id="star_2"></span>
+                        <span class="fa fa-star" id="star_3"></span>
+                        <span class="fa fa-star" id="star_4"></span>
+                        <span class="fa fa-star" id="star_5"></span>
+                    </div>
+                </div>
+                <div class="review-product-comment">
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                        classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a
+                        Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin
+                        words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in
+                        classical literature, discovered the undoubtable source.</p>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-container">
+                <div class="box-header-product">
+                    <div class="text-header">
+                        Produk Terkait
+                    </div>
+                </div>
+                <!-- <hr> -->
+            </div>
+        </div>
+        <div class="box-product-grid">
+            <div class="box-product">
+                <div class="image-product">
+                    <img src="image/example/produk/example_produk1.jpg" alt="" class="img-product">
+                </div>
+                <div class="description">
+                    <div class="product-title">
+                        TV Samsung 24 inch Screen
+                    </div>
+                    <div class="product-price">
+                        <div class="price-real">
+                            2.000.000
+                        </div>
+                        <div class="price">
+                            1.500.000
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-product">
+                <div class="image-product">
+                    <img src="image/example/produk/example_produk2.jpg" alt="" class="img-product">
+                </div>
+                <div class="description">
+                    asgasg
+                </div>
+            </div>
+            <div class="box-product">
+                <div class="image-product">
+                    <img src="image/example/produk/example_produk3.jpg" alt="" class="img-product">
+                </div>
+                <div class="description">
+                    asgasg
+                </div>
+            </div>
+            <div class="box-product">
+                <div class="image-product">
+                    <img src="image/example/produk/example_produk4.jpg" alt="" class="img-product">
+                </div>
+                <div class="description">
+                    <div class="product-title">
+                        Plain Sweater Pull&Bear (Replika)
+                    </div>
+                    <div class="product-price">
+                        <div class="price-real">
+                            <!-- 2.000.000 -->
+                        </div>
+                        <div class="price">
+                            175.000
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-product">
+                <div class="image-product">
+                    <img src="image/example/produk/example_produk1.jpg" alt="" class="img-product">
+                </div>
+                <div class="description">
+                    asgasg
+                </div>
+            </div>
+            <div class="box-product">
+                <div class="image-product">
+                    <img src="image/example/produk/example_produk1.jpg" alt="" class="img-product">
+                </div>
+                <div class="description">
+                    asgasg
+                </div>
+            </div>
+            <div class="box-product">
+                <div class="image-product">
+                    <img src="image/example/produk/example_produk1.jpg" alt="" class="img-product">
+                </div>
+                <div class="description">
+                    asgasg
+                </div>
+            </div>
+            <div class="box-product">
+                <div class="image-product">
+                    <img src="image/example/produk/example_produk1.jpg" alt="" class="img-product">
+                </div>
+                <div class="description">
+                    asgasg
+                </div>
+            </div>
+            <div class="box-product">
+                <div class="image-product">
+                    <img src="image/example/produk/example_produk1.jpg" alt="" class="img-product">
+                </div>
+                <div class="description">
+                    <div class="product-title">
+                        TV Samsung 24 inch Screen
+                    </div>
+                    <div class="product-price">
+                        <div class="price-real">
+                            2.000.000
+                        </div>
+                        <div class="price">
+                            1.500.000
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-product">
+                <div class="image-product">
+                    <img src="image/example/produk/example_produk2.jpg" alt="" class="img-product">
+                </div>
+                <div class="description">
+                    asgasg
+                </div>
+            </div>
+            <div class="box-product">
+                <div class="image-product">
+                    <img src="image/example/produk/example_produk3.jpg" alt="" class="img-product">
+                </div>
+                <div class="description">
+                    asgasg
+                </div>
+            </div>
+            <div class="box-product">
+                <div class="image-product">
+                    <img src="image/example/produk/example_produk4.jpg" alt="" class="img-product">
+                </div>
+                <div class="description">
+                    <div class="product-title">
+                        Plain Sweater Pull&Bear (Replika)
+                    </div>
+                    <div class="product-price">
+                        <div class="price-real">
+                            <!-- 2.000.000 -->
+                        </div>
+                        <div class="price">
+                            175.000
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="center-item">
+                <a href="" class="btn-load">Load More</a>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+    <!-- footer -->
+    <footer class="foot-bar">
+        <div class="footer-container">
+            <div class="grid-4">
+                <div class="foot-box">
+                    <div class="foot-title">
+                        Fajar
+                    </div>
+                    <div class="foot-content">
+                        <ul>
+                            <li>
+                                <a href="">Tentang Fajar</a>
+                            </li>
+                            <li>
+                                <a href="">Isi 2</a>
+                            </li>
+                            <li>
+                                <a href="">Isi 3</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="foot-box">
+                    <div class="foot-title">
+                        Media Sosial
+                    </div>
+                    <div class="foot-content">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <img src="image/all/Facebook Old_48px.png" alt="" class="icon-20">
+                                    <span>Facebook</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="image/all/instagram_new_48px.png" alt="" class="icon-20">
+                                    <span>Instagram</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="image/all/twitter_48px.png" alt="" class="icon-20">
+                                    <span>Twitter</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="image/all/whatsapp_48px.png" alt="" class="icon-20">
+                                    <span>Whatsapp</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="foot-box">
+                    <div class="foot-title">
+                        Bantuan
+                    </div>
+                    <div class="foot-content">
+                        <ul>
+                            <li>
+                                <a href="">
+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">Isi 2</a>
+                            </li>
+                            <li>
+                                <a href="">Isi 3</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="foot-box">
+                    <div class="foot-title">
+                        Contact
+                    </div>
+                    <div class="foot-content">
+                        <ul>
+                            <li>
+                                0210000000
+                            </li>
+                            <li>
+                                <a href="">Isi 2</a>
+                            </li>
+                            <li>
+                                <a href="">Isi 3</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="foot-logo">
+                <img src="image/logo/logo3.jpg" alt="">
+                <div class="copyright">
+                    Copyright &copy; 2020 Fajar
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/app.js"></script>
+    <script>
+        console.log(slide_image);
+    </script>
+</body>
+
+</html>

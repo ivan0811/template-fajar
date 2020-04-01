@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="nav-bar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="image/logo/logo3.jpg" alt="">
+            </div>
+            <div class="search">
+                <form action="">
+                    <div class="search-box">
+                        <input type="text" class="search-input" onfocus="search_history_product()"
+                            onblur="search_blur_product()" placeholder="Search">
+                        <button type="submit" class="btn-search">
+                            <img src="image/all/search_26px.png" alt="" class="search-img">
+                        </button>
+                        <ul>
+                            <li class="search-header">Pencarian Terahir
+                            </li>
+                            <li><a href="">Link 1</a></li>
+                            <li><a href="">Link 2</a></li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+            <div class="img-favicon">
+                <a href="">
+                    <img src="image/all/appointment_reminders_26px.png" alt="">
+                </a>
+                <ul>
+                    <li>
+                        <a href="">Link 1</a>
+                    </li>
+                    <li><a href="">Link 2</a></li>
+                    <li><a href="">Link 3</a></li>
+                </ul>
+            </div>
+            <div class="img-favicon">
+                <a href="">
+                    <img src="image/all/speech_bubble_26px.png" alt="">
+                </a>
+                <ul>
+                    <li>
+                        <a href="">Link 1</a>
+                    </li>
+                    <li><a href="">Link 2</a></li>
+                    <li><a href="">Link 3</a></li>
+                </ul>
+            </div>
+            <div class="img-favicon">
+                <a href="">
+                    <img src="image/all/shopping_cart_26px.png" alt="">
+                </a>
+            </div>
+            <div class="user-profile">
+                <a href="" class="btn-profile">
+                    <div class="img-profile">
+                        <img src="image/example/user/user_color_64px.png" alt="">
+                    </div>
+                    <div class="profile-name">
+                        Ivan Faathirza
+                    </div>
+                </a>
+                <ul>
+                    <li>
+                        <a href="">
+                            <i class="fa fa-cog"></i>
+                            <span>
+                                Pengaturan Profile
+                            </span> </a>
+                    </li>
+                    <li><a href="">
+                            <i class="fa fa-sign-out-alt"></i>
+                            <span>
+                                Logout
+                            </span>
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- content -->
+    <div class="content-container">
+        <div class="box">
+            <div class="box-container">
+                <div class="box-header">
+                    <div class="text-header">
+                        Pengaturan Profile
+                    </div>
+                </div>
+                <hr class="cart-line">
+                <div class="box-container-checkout">
+                    <div class="box-content-checkout">
+                        <div class="address-checkout">
+                            <div class="grid-box-row-label profile-box-all">
+                                <div class="flex-box-column">
+                                    <a href="" class="box-btn-profile">
+                                        <i class="fa fa-user"></i>
+                                        <span class="menu-text-profile">
+                                            Edit Profil
+                                        </span>
+                                    </a>
+                                    <a href="" class="box-btn-profile ">
+                                        <i class="fa fa-lock"></i>
+                                        <span class="menu-text-profile">
+                                            Keamanan
+                                        </span>
+                                    </a>
+                                    <a href="" class="box-btn-profile active">
+                                        <i class="fa fa-bell"></i>
+                                        <span class="menu-text-profile">
+                                            Notifikasi
+                                        </span>
+                                    </a>
+                                    <a href="" class="box-btn-profile">
+                                        <i class="fa fa-credit-card"></i>
+                                        <span class="menu-text-profile">
+                                            Rekening Bank
+                                        </span>
+                                    </a>
+                                    <a href="" class="box-btn-profile">
+                                        <i class="fa fa-map-marker-alt"></i>
+                                        <span class="menu-text-profile">
+                                            Alamat
+                                        </span>
+                                    </a>
+                                    <a href="" class="box-btn-profile">
+                                        <i class="fa fa-history"></i>
+                                        <span class="menu-text-profile">
+                                            History
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="box-profile-content">
+                                    <div class="box-header">
+                                        Pengaturan Notifikasi
+                                    </div>
+                                    <hr class="cart-line">
+                                    <div class="change-profile-box">
+                                        <div class="box-header-2">
+                                            Promo
+                                        </div>
+                                        <div class="box-header-2-input">
+                                            <div class="grid-box-row-label profile-box-edit">
+                                                <label class="profile-label">
+                                                    Email
+                                                </label>
+                                                <label class="checkbox-cart">
+                                                    <input type="checkbox" id="checkbox_check_cart" checked>
+                                                    <span class="checkbox-custom"></span>
+                                                </label>
+                                            </div>
+                                            <div class="grid-box-row-label profile-box-edit">
+                                                <label class="profile-label">
+                                                    Notifikasi
+                                                </label>
+                                                <label class="checkbox-cart">
+                                                    <input type="checkbox" id="checkbox_check_cart" checked>
+                                                    <span class="checkbox-custom"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr class="cart-line">
+                                    <div class="change-profile-box">
+                                        <div class="box-header-2">
+                                            Berita atau Acara
+                                        </div>
+                                        <div class="box-header-2-input">
+                                            <div class="grid-box-row-label profile-box-edit">
+                                                <label class="profile-label">
+                                                    Email
+                                                </label>
+                                                <label class="checkbox-cart">
+                                                    <input type="checkbox" id="checkbox_check_cart" checked>
+                                                    <span class="checkbox-custom"></span>
+                                                </label>
+                                            </div>
+                                            <div class="grid-box-row-label profile-box-edit">
+                                                <label class="profile-label">
+                                                    Notifikasi
+                                                </label>
+                                                <label class="checkbox-cart">
+                                                    <input type="checkbox" id="checkbox_check_cart" checked>
+                                                    <span class="checkbox-custom"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr class="cart-line">
+                                    <div class="change-profile-box">
+                                        <div class="box-header-2">
+                                            Transaksi
+                                        </div>
+                                        <div class="box-header-2-input">
+                                            <div class="grid-box-row-label profile-box-edit">
+                                                <label class="profile-label">
+                                                    Email
+                                                </label>
+                                                <label class="checkbox-cart">
+                                                    <input type="checkbox" id="checkbox_check_cart" checked>
+                                                    <span class="checkbox-custom"></span>
+                                                </label>
+                                            </div>
+                                            <div class="grid-box-row-label profile-box-edit">
+                                                <label class="profile-label">
+                                                    Notifikasi
+                                                </label>
+                                                <label class="checkbox-cart">
+                                                    <input type="checkbox" id="checkbox_check_cart" checked>
+                                                    <span class="checkbox-custom"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr class="cart-line">
+                                    <div class="change-profile-box">
+                                        <div class="box-header-2">
+                                            Chat
+                                        </div>
+                                        <div class="box-header-2-input">
+                                            <div class="grid-box-row-label profile-box-edit">
+                                                <label class="profile-label">
+                                                    Email
+                                                </label>
+                                                <label class="checkbox-cart">
+                                                    <input type="checkbox" id="checkbox_check_cart" checked>
+                                                    <span class="checkbox-custom"></span>
+                                                </label>
+                                            </div>
+                                            <div class="grid-box-row-label profile-box-edit">
+                                                <label class="profile-label">
+                                                    Notifikasi
+                                                </label>
+                                                <label class="checkbox-cart">
+                                                    <input type="checkbox" id="checkbox_check_cart" checked>
+                                                    <span class="checkbox-custom"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- footer -->
+
+    <footer class="foot-bar">
+        <div class="footer-container">
+            <div class="grid-4">
+                <div class="foot-box">
+                    <div class="foot-title">
+                        Fajar
+                    </div>
+                    <div class="foot-content">
+                        <ul>
+                            <li>
+                                <a href="">Tentang Fajar</a>
+                            </li>
+                            <li>
+                                <a href="">Isi 2</a>
+                            </li>
+                            <li>
+                                <a href="">Isi 3</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="foot-box">
+                    <div class="foot-title">
+                        Media Sosial
+                    </div>
+                    <div class="foot-content">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <img src="image/all/Facebook Old_48px.png" alt="" class="icon-20">
+                                    <span>Facebook</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="image/all/instagram_new_48px.png" alt="" class="icon-20">
+                                    <span>Instagram</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="image/all/twitter_48px.png" alt="" class="icon-20">
+                                    <span>Twitter</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="image/all/whatsapp_48px.png" alt="" class="icon-20">
+                                    <span>Whatsapp</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="foot-box">
+                    <div class="foot-title">
+                        Bantuan
+                    </div>
+                    <div class="foot-content">
+                        <ul>
+                            <li>
+                                <a href="">
+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">Isi 2</a>
+                            </li>
+                            <li>
+                                <a href="">Isi 3</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="foot-box">
+                    <div class="foot-title">
+                        Contact
+                    </div>
+                    <div class="foot-content">
+                        <ul>
+                            <li>
+                                0210000000
+                            </li>
+                            <li>
+                                <a href="">Isi 2</a>
+                            </li>
+                            <li>
+                                <a href="">Isi 3</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="foot-logo">
+                <img src="image/logo/logo3.jpg" alt="">
+                <div class="copyright">
+                    Copyright &copy; 2020 Fajar
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

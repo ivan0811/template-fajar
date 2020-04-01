@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="nav-bar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="image/logo/logo3.jpg" alt="">
+            </div>
+            <div class="search">
+                <form action="">
+                    <div class="search-box">
+                        <input type="text" class="search-input" onfocus="search_history_product()"
+                            onblur="search_blur_product()" placeholder="Search">
+                        <button type="submit" class="btn-search">
+                            <img src="image/all/search_26px.png" alt="" class="search-img">
+                        </button>
+                        <ul>
+                            <li class="search-header">Pencarian Terahir
+                            </li>
+                            <li><a href="">Link 1</a></li>
+                            <li><a href="">Link 2</a></li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+            <div class="img-favicon">
+                <a href="">
+                    <img src="image/all/appointment_reminders_26px.png" alt="">
+                </a>
+                <ul>
+                    <li>
+                        <a href="">Link 1</a>
+                    </li>
+                    <li><a href="">Link 2</a></li>
+                    <li><a href="">Link 3</a></li>
+                </ul>
+            </div>
+            <div class="img-favicon">
+                <a href="">
+                    <img src="image/all/speech_bubble_26px.png" alt="">
+                </a>
+                <ul>
+                    <li>
+                        <a href="">Link 1</a>
+                    </li>
+                    <li><a href="">Link 2</a></li>
+                    <li><a href="">Link 3</a></li>
+                </ul>
+            </div>
+            <div class="img-favicon">
+                <a href="">
+                    <img src="image/all/shopping_cart_26px.png" alt="">
+                </a>
+            </div>
+            <div class="user">
+                <a href="" class="btn-login">
+                    Login
+                </a>
+                <a href="" class="btn-register">
+                    Register
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- content -->
+    <div class="content-container">
+        <div class="box-tab">
+            <div class="tab-5">
+                <div class="tab-content" id="tab_content">
+                    <span>Pesanan</span>
+                </div>
+                <div class="tab-content" id="tab_content">
+                    <span>Promo</span>
+                </div>
+                <div class="tab-content" id="tab_content">
+                    <span>Chat</span>
+                </div>
+                <div class="tab-content click-true" id="tab_content">
+                    <span>Pengiriman</span>
+                </div>
+                <div class="tab-content" id="tab_content">
+                    <span>Update</span>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-container">
+                <div class="box-header">
+                    <div class="text-header">
+                        Pengiriman
+                    </div>
+                </div>
+                <hr class="cart-line">
+                <div class="box-container-checkout">
+                    <div class="box-content-checkout">
+                        <div class="address-checkout">
+                            <div class="grid-box-row-label delivery-box-all">
+                                <div class="flex-box-column box-delivery-out">
+                                    <div class="delivery-detail-box checked">
+                                        <div class="grid-box-row-label delivery-detail-item">
+                                            <div class="img-delivery">
+                                                <div class="box-img-delivery">
+                                                    <span class="fa fa-wallet"></span>
+                                                </div>
+                                            </div>
+                                            <div class="content-delivery-box">
+                                                <div class="flex-box-column">
+                                                    <h4 class="title-delivery">Pembayaran</h4>
+                                                    <p class="content-delivery">Belum Melakukan Pembayaran</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="delivery-detail-box">
+                                        <div class="grid-box-row-label delivery-detail-item">
+                                            <div class="img-delivery">
+                                                <div class="box-img-delivery">
+                                                    <span class="fa fa-money-check"></span>
+                                                </div>
+                                            </div>
+                                            <div class="content-delivery-box">
+                                                <div class="flex-box-column">
+                                                    <h4 class="title-delivery">Konfirmasi Pembayaran</h4>
+                                                    <p class="content-delivery">Pembayaran Belum Terkonfirmasi</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="delivery-detail-box">
+                                        <div class="grid-box-row-label delivery-detail-item">
+                                            <div class="img-delivery">
+                                                <div class="box-img-delivery">
+                                                    <span class="fa fa-box"></span>
+                                                </div>
+                                            </div>
+                                            <div class="content-delivery-box">
+                                                <div class="flex-box-column">
+                                                    <h4 class="title-delivery">Package Barang</h4>
+                                                    <p class="content-delivery">Sedang Mempersiapkan barang</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="delivery-detail-box">
+                                        <div class="grid-box-row-label delivery-detail-item">
+                                            <div class="img-delivery">
+                                                <div class="box-img-delivery">
+                                                    <span class="fa fa-pallet"></span>
+                                                </div>
+                                            </div>
+                                            <div class="content-delivery-box">
+                                                <div class="flex-box-column">
+                                                    <h4 class="title-delivery">Persiapan pengiriman</h4>
+                                                    <p class="content-delivery">Barang sampai pada kantor J&T Kuningan
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="delivery-detail-box">
+                                        <div class="grid-box-row-label delivery-detail-item">
+                                            <div class="img-delivery">
+                                                <div class="box-img-delivery">
+                                                    <span class="fa fa-truck"></span>
+                                                </div>
+                                            </div>
+                                            <div class="content-delivery-box">
+                                                <div class="flex-box-column">
+                                                    <h4 class="title-delivery">Proses Pengiriman</h4>
+                                                    <p class="content-delivery">Barang Sampai Jakarta Barat
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="delivery-detail-box">
+                                        <div class="grid-box-row-label delivery-detail-item">
+                                            <div class="img-delivery">
+                                                <div class="box-img-delivery">
+                                                    <span class="fa fa-map-marker-alt"></span>
+                                                </div>
+                                            </div>
+                                            <div class="content-delivery-box">
+                                                <div class="flex-box-column">
+                                                    <h4 class="title-delivery">Peneriamaan Barang</h4>
+                                                    <p class="content-delivery">Barang Sudah Sampai
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="delivery-detail-box">
+                                        <div class="grid-box-row-label delivery-detail-item">
+                                            <div class="img-delivery">
+                                                <div class="box-img-delivery">
+                                                    <span class="fa fa-check-square"></span>
+                                                </div>
+                                            </div>
+                                            <div class="content-delivery-box">
+                                                <div class="flex-box-column">
+                                                    <h4 class="title-delivery">Konfirmasi Peneriamaan Barang</h4>
+                                                    <p class="content-delivery">Konfirmasi Peneriamaan Barang Telah
+                                                        Sampai
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="description-box-delivery">
+                                    <div class="box-container-checkout">
+                                        <div class="box-header">
+                                            Pembayaran
+                                        </div>
+                                    </div>
+                                    <div class="box-content-checkout delivery-detail-content">
+                                        <div class="address-checkout">
+                                            <div class="delivery-description-content">
+                                                <p class="content-detail-delivery">Belum Melakukan Pembayaran Segera
+                                                    melakukan pembayaran pembayaran tidak bisa di lakukan ketika sudah
+                                                    melewati 3 hari.</p>
+                                                <p class="address-detail-checkout">
+                                                    <ul class="box-list-payment">
+                                                        <li>Transfer Pembayaran ke rekening tujuan</li>
+                                                        <li>Kirim bukti transaksi ke form di bawah ini</li>
+                                                        <li>Menunggu Konfirmasi dari pihak Fajar</li>
+                                                        <li>Tunggu notifikasi konfirmasi</li>
+                                                        <li>Transaksi selesai</li>
+                                                    </ul>
+                                                </p>
+                                                <div class="box-content-checkout">
+                                                    <button class="pay-btn">Bayar Di Sini</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="cart-line">
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+
+    <footer class="foot-bar">
+        <div class="footer-container">
+            <div class="grid-4">
+                <div class="foot-box">
+                    <div class="foot-title">
+                        Fajar
+                    </div>
+                    <div class="foot-content">
+                        <ul>
+                            <li>
+                                <a href="">Tentang Fajar</a>
+                            </li>
+                            <li>
+                                <a href="">Isi 2</a>
+                            </li>
+                            <li>
+                                <a href="">Isi 3</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="foot-box">
+                    <div class="foot-title">
+                        Media Sosial
+                    </div>
+                    <div class="foot-content">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <img src="image/all/Facebook Old_48px.png" alt="" class="icon-20">
+                                    <span>Facebook</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="image/all/instagram_new_48px.png" alt="" class="icon-20">
+                                    <span>Instagram</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="image/all/twitter_48px.png" alt="" class="icon-20">
+                                    <span>Twitter</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="image/all/whatsapp_48px.png" alt="" class="icon-20">
+                                    <span>Whatsapp</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="foot-box">
+                    <div class="foot-title">
+                        Bantuan
+                    </div>
+                    <div class="foot-content">
+                        <ul>
+                            <li>
+                                <a href="">
+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">Isi 2</a>
+                            </li>
+                            <li>
+                                <a href="">Isi 3</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="foot-box">
+                    <div class="foot-title">
+                        Contact
+                    </div>
+                    <div class="foot-content">
+                        <ul>
+                            <li>
+                                0210000000
+                            </li>
+                            <li>
+                                <a href="">Isi 2</a>
+                            </li>
+                            <li>
+                                <a href="">Isi 3</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="foot-logo">
+                <img src="image/logo/logo3.jpg" alt="">
+                <div class="copyright">
+                    Copyright &copy; 2020 Fajar
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

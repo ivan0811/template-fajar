@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="nav-bar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="image/logo/logo3.jpg" alt="">
+            </div>
+            <div class="search">
+                <form action="">
+                    <div class="search-box">
+                        <input type="text" class="search-input" onfocus="search_history_product()"
+                            onblur="search_blur_product()" placeholder="Search">
+                        <button type="submit" class="btn-search">
+                            <img src="image/all/search_26px.png" alt="" class="search-img">
+                        </button>
+                        <ul>
+                            <li class="search-header">Pencarian Terahir
+                            </li>
+                            <li><a href="">Link 1</a></li>
+                            <li><a href="">Link 2</a></li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+            <div class="img-favicon">
+                <a href="">
+                    <img src="image/all/appointment_reminders_26px.png" alt="">
+                </a>
+                <ul>
+                    <li>
+                        <a href="">Link 1</a>
+                    </li>
+                    <li><a href="">Link 2</a></li>
+                    <li><a href="">Link 3</a></li>
+                </ul>
+            </div>
+            <div class="img-favicon">
+                <a href="">
+                    <img src="image/all/speech_bubble_26px.png" alt="">
+                </a>
+                <ul>
+                    <li>
+                        <a href="">Link 1</a>
+                    </li>
+                    <li><a href="">Link 2</a></li>
+                    <li><a href="">Link 3</a></li>
+                </ul>
+            </div>
+            <div class="img-favicon">
+                <a href="">
+                    <img src="image/all/shopping_cart_26px.png" alt="">
+                </a>
+            </div>
+            <div class="user">
+                <a href="" class="btn-login">
+                    Login
+                </a>
+                <a href="" class="btn-register">
+                    Register
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- content -->
+    <div class="content-container">
+        <div class="box-tab">
+            <div class="tab-5">
+                <div class="tab-content click-true" id="tab_content">
+                    <span>Pesanan</span>
+                </div>
+                <div class="tab-content" id="tab_content">
+                    <span>Promo</span>
+                </div>
+                <div class="tab-content" id="tab_content">
+                    <span>Chat</span>
+                </div>
+                <div class="tab-content" id="tab_content">
+                    <span>Pengiriman</span>
+                </div>
+                <div class="tab-content" id="tab_content">
+                    <span>Konfirmasi</span>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-container">
+                <div class="box-header">
+                    <div class="text-header">
+                        Pesanan
+                    </div>
+                </div>
+                <hr class="cart-line">
+                <div class="box-container-checkout">
+                    <div class="box-header">
+                        Status
+                    </div>
+                    <div class="box-content-checkout">
+                        <div class="address-checkout">
+                            <div class="grid-box-row-label">
+                                <div class="box-header-2 row-label">
+                                    Pembayaran
+                                </div>
+                                <div class="box-content-2">
+                                    <p class="address-detail-checkout">
+                                        Belum Melakukan Pembayaran
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-content-checkout">
+                    <button class="pay-btn">Bayar Di Sini</button>
+                    <button class="danger-btn">Batalkan Pesanan</button>
+                </div>
+                <hr class="cart-line">
+                <div class="box-container-checkout">
+                    <div class="box-content">
+                        <div class="checkout-product">
+                            <div class="box-header box-1">
+                                Produk Yang dipesan
+                            </div>
+                            <div class="box-header box-2">
+                                Jumlah
+                            </div>
+                            <div class="box-header box-3">
+                                Harga Total
+                            </div>
+                            <div class="box-header box-4">
+                                Catatan
+                            </div>
+                            <!-- <div class="product-checkout"> -->
+                            <!-- <div class="product-checkout-item"> -->
+                            <img src="image/example/produk/example_produk1.jpg" alt="">
+                            <div class="product-cart-text">
+                                <div class="product-cart-title">
+                                    TV 20 inch
+                                </div>
+                                <div class="product-cart-price">1.500.000</div>
+                                <input type="hidden" id="price" value="1500000">
+                            </div>
+                            <div class="detail-value-checkout">
+                                <div class="total-value">
+                                    1
+                                </div>
+                            </div>
+                            <div class="price-detail">
+                                <p id="price_detail">
+                                    1.500.000
+                                </p>
+                                <input type="hidden" id="price_detail_input">
+                            </div>
+                            <!-- </div> -->
+                            <!-- </div> -->
+                            <div class="message-product-checkout">
+                                <p class="message-product">
+                                    Warna Hitam
+                                </p>
+                            </div>
+                            <img src="image/example/produk/example_produk3.jpg" alt="">
+                            <div class="product-cart-text">
+                                <div class="product-cart-title">
+                                    Laptop Lenovo Legion
+                                </div>
+                                <div class="product-cart-price">15.000.000</div>
+                                <input type="hidden" id="price" value="1500000">
+                            </div>
+                            <div class="detail-value-checkout">
+                                <div class="total-value">
+                                    1
+                                </div>
+                            </div>
+                            <div class="price-detail">
+                                <p id="price_detail">
+                                    15.000.000
+                                </p>
+                                <input type="hidden" id="price_detail_input">
+                            </div>
+                            <!-- </div> -->
+                            <!-- </div> -->
+                            <div class="message-product-checkout">
+                                <!-- <textarea name="" id="" cols="25" rows="5"></textarea> -->
+                                <p class="message-product">
+                                    Warna Hitam Dove
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="cart-line">
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-container">
+                <div class="box-header">
+                    <div class="text-header">
+                        Keterangan
+                    </div>
+                </div>
+                <hr class="cart-line">
+                <div class="box-container-checkout">
+                    <div class="box-header">
+                        Alamat
+                    </div>
+                    <div class="box-content-checkout">
+                        <div class="address-checkout">
+                            <div class="grid-box-row-label">
+                                <div class="box-header-2 row-label">
+                                    Dari
+                                </div>
+                                <div class="box-content-2">
+                                    <p class="address-detail-checkout">
+                                        Fajar Kuningan
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="address-checkout">
+                        <div class="grid-box-row-label">
+                            <div class="box-header-2 row-label">
+                                Ke
+                            </div>
+                            <div class="flex-box-column">
+                                <div class="box-content-2 box-column">
+                                    <p class="address-detail-checkout">
+                                        Kuningan
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="cart-line">
+                <div class="box-container-checkout">
+                    <div class="box-header">
+                        Detail Pesanan
+                    </div>
+                    <div class="box-content-checkout">
+                        <div class="address-checkout">
+                            <div class="grid-box-row-label">
+                                <div class="box-header-2 row-label">
+                                    Pengiriman
+                                </div>
+                                <div class="box-content-2">
+                                    <p class="address-detail-checkout">
+                                        J&T Express - Rp 20.000
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="address-checkout">
+                        <div class="grid-box-row-label">
+                            <div class="box-header-2 row-label">
+                                Jumlah Produk
+                            </div>
+                            <div class="flex-box-column">
+                                <div class="box-content-2 box-column">
+                                    <p class="address-detail-checkout">
+                                        2
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="address-checkout">
+                        <div class="grid-box-row-label">
+                            <div class="box-header-2 row-label">
+                                Harga Total Produk
+                            </div>
+                            <div class="flex-box-column">
+                                <div class="box-content-2 box-column">
+                                    <p class="address-detail-checkout">
+                                        Rp 16.500.000
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="address-checkout">
+                        <div class="grid-box-row-label">
+                            <div class="box-header-2 row-label">
+                                Total Harga
+                            </div>
+                            <div class="flex-box-column">
+                                <div class="box-content-2 box-column">
+                                    <p class="address-detail-checkout">
+                                        Rp 16.520.000
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- footer -->
+
+    <footer class="foot-bar">
+        <div class="footer-container">
+            <div class="grid-4">
+                <div class="foot-box">
+                    <div class="foot-title">
+                        Fajar
+                    </div>
+                    <div class="foot-content">
+                        <ul>
+                            <li>
+                                <a href="">Tentang Fajar</a>
+                            </li>
+                            <li>
+                                <a href="">Isi 2</a>
+                            </li>
+                            <li>
+                                <a href="">Isi 3</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="foot-box">
+                    <div class="foot-title">
+                        Media Sosial
+                    </div>
+                    <div class="foot-content">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <img src="image/all/Facebook Old_48px.png" alt="" class="icon-20">
+                                    <span>Facebook</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="image/all/instagram_new_48px.png" alt="" class="icon-20">
+                                    <span>Instagram</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="image/all/twitter_48px.png" alt="" class="icon-20">
+                                    <span>Twitter</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="image/all/whatsapp_48px.png" alt="" class="icon-20">
+                                    <span>Whatsapp</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="foot-box">
+                    <div class="foot-title">
+                        Bantuan
+                    </div>
+                    <div class="foot-content">
+                        <ul>
+                            <li>
+                                <a href="">
+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">Isi 2</a>
+                            </li>
+                            <li>
+                                <a href="">Isi 3</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="foot-box">
+                    <div class="foot-title">
+                        Contact
+                    </div>
+                    <div class="foot-content">
+                        <ul>
+                            <li>
+                                0210000000
+                            </li>
+                            <li>
+                                <a href="">Isi 2</a>
+                            </li>
+                            <li>
+                                <a href="">Isi 3</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="foot-logo">
+                <img src="image/logo/logo3.jpg" alt="">
+                <div class="copyright">
+                    Copyright &copy; 2020 Fajar
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
